@@ -1,0 +1,831 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+#darkpurple {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+
+/* Here is header*/
+
+
+.header {
+    padding: 50px 100px 0 100px;
+    /* background-color: aqua; */
+}
+
+.upper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-radius: 15px;
+}
+
+/*  All logo materials are inside of this section */
+
+.logo {
+    color: #724FD8;
+}
+
+.logotext {
+    font-size: 40px;
+    display: inline;
+    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Vina Sans', sans-serif;
+}
+
+/* Navigation bars are there */
+
+.navbar {
+    padding: 15px 0;
+}
+
+.navlist {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: right;
+}
+
+.navlist a:hover {
+    font-size: x-large;
+    font-weight: bold;
+    background-color: #714fd8a5;
+    padding: 10px 25px;
+    border-radius: 15px;
+}
+
+.navlist a:focus {
+    border-bottom: 3px solid black;
+}
+
+.navlist a {
+    color: black;
+    font-size: 20px;
+}
+
+.humburger {
+    color: purple;
+    font-size: 38px;
+    font-weight: 800;
+    display: none;
+}
+
+.cancel {
+    color: black;
+    font-size: 25px;
+    font-weight: 800;
+    display: none;
+    text-align: right;
+    margin: 13px 0 0 0;
+}
+
+/* From here main body and content will be done */
+
+main {
+    padding: 0 100px 0 100px;
+}
+
+.categories {
+    margin: 100px 0 60px 0;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+#posts {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 6.5%;
+}
+
+.blogimg {
+    width: 100%;
+    border-radius: 0 50px;
+    margin-bottom: 15px;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.post p {
+    display: inline-block;
+    margin: 25px 0 0 0;
+    padding: 0 10px 0 0;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.post a {
+    color: black;
+}
+
+#readmore {
+    text-align: center;
+    margin: 150px auto 80px auto;
+    padding: 10px 0;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    background-color: #724FD8;
+    border-radius: 3px;
+    width: 300px;
+}
+
+#readmore a {
+    color: black;
+}
+
+
+/* next section */
+
+
+.explore {
+    background-color: rgba(247, 244, 244, 0.711);
+    display: grid;
+    grid-template-columns: 40% 60%;
+    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.exploreimg {
+    box-sizing: border-box;
+    padding: 25px;
+}
+
+#downpic {
+    width: 100%;
+    height: 100%;
+}
+
+.exploretext {
+    margin: 50px 100px;
+}
+
+.exploretext h3 {
+    font-size: 50px;
+    margin: 0 0 25px 0;
+}
+
+.exploretext p {
+    text-align: justify;
+}
+
+#bexplore {
+    margin: 35px 0 0 0;
+    padding: 10px 30px;
+    font-size: large;
+    color: white;
+    display: inline-block;
+    background-color: #724FD8;
+}
+
+
+/* now footer started */
+
+
+#footer {
+    background-color: black;
+    color: white;
+    padding: 10px 50px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 25% 20% 25% 30%;
+    background-color: black;
+    color: white;
+    padding: 100px 200px 25px 200px;
+    width: 100%;
+}
+
+.myself h1 {
+    font-size: 4rem;
+    color: #A586FF;
+    margin: -25px 0 25px 0;
+}
+
+.myself {
+    letter-spacing: 2.5px;
+    text-align: justify;
+}
+
+.links,
+.contact,
+.social {
+    text-align: center;
+}
+
+.links li,
+.social li {
+    cursor: pointer;
+    margin: 25px 0;
+}
+
+.links a {
+    color: white;
+}
+
+.links h2,
+.contact h2,
+.social h2 {
+    font-size: 2rem;
+    color: white;
+    margin: 0 0 25px 0;
+}
+
+.contact ul li a {
+    color: white;
+}
+
+.social a {
+    text-align: right;
+}
+
+#copyright {
+    float: right;
+}
+
+@media only screen and (max-width: 1188px) {
+
+    .categories {
+        margin: 90px 0 60px 0;
+        font-size: 34px;
+    }
+
+    .blogimg {
+        border-radius: 0 35px;
+    }
+
+    .explore {
+        grid-template-columns: 45% 55%;
+    }
+
+    .exploretext {
+        margin: 50px 50px 25px 50px;
+    }
+
+    .exploretext h3 {
+        font-size: 40px;
+        margin: 0 0 20px 0;
+    }
+
+    .footer {
+        grid-template-columns: 25% 20% 25% 30%;
+        padding: 90px 100px 25px 100px;
+    }
+
+    .links li {
+        margin: 23px 0;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .header {
+        padding: 50px 75px 0 75px;
+    }
+
+    .upper {
+        grid-template-columns: 45% 55%;
+    }
+
+    main {
+        padding: 0 75px 0 75px;
+    }
+
+    .categories {
+        margin: 80px 0 60px 0;
+        font-size: 33px;
+    }
+
+    #posts {
+        grid-template-columns: 32% 32% 32%;
+        grid-gap: 2%;
+    }
+
+    .blogimg {
+        border-radius: 0 45px;
+    }
+
+    .explore {
+        grid-template-columns: 50% 50%;
+    }
+
+    .exploretext {
+        margin: 50px 50px 25px 30px;
+    }
+
+    .exploretext h3 {
+        font-size: 35px;
+        margin: 0 0 20px 0;
+    }
+
+    .footer {
+        grid-template-columns: 30% 20% 20% 30%;
+        padding: 90px 75px 25px 75px;
+    }
+
+    .links li {
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 863px) {
+
+    .header {
+        padding: 50px 70px 0 70px;
+    }
+
+    .upper {
+        grid-template-columns: 40% 60%;
+    }
+
+    main {
+        padding: 0 70px 0 70px;
+    }
+
+    .categories {
+        margin: 70px 0 60px 0;
+        font-size: 32px;
+    }
+
+    .blogimg {
+        border-radius: 0 40px;
+    }
+
+    .exploretext {
+        margin: 50px 50px 25px 30px;
+    }
+
+    .exploretext h3 {
+        font-size: 30px;
+    }
+
+    .footer {
+        grid-template-columns: 30% 20% 20% 30%;
+        padding: 90px 50px 25px 50px;
+    }
+
+    .myself h1 {
+        font-size: 3rem;
+    }
+
+    .links h2,
+    .contact h2,
+    .social h2 {
+        font-size: 1.5rem;
+    }
+
+    .links li {
+        margin: 18px 0;
+    }
+}
+
+@media only screen and (max-width: 754px) {
+
+    .header {
+        padding: 50px 50px 0 50px;
+    }
+
+    .upper {
+        grid-template-columns: 35% 65%;
+    }
+
+    main {
+        padding: 0 50px 0 50px;
+    }
+
+    .categories {
+        margin: 60px 0 60px 0;
+        font-size: 31px;
+    }
+
+    .blogimg {
+        border-radius: 0 35px;
+    }
+
+    .exploretext {
+        margin: 25px;
+    }
+
+    .footer {
+        padding: 90px 25px 20px 25px;
+    }
+
+    .links li {
+        margin: 15px 0;
+    }
+
+    .links h2,
+    .contact h2,
+    .social h2 {
+        font-size: 1.8rem;
+        margin: 0 0 19px 0;
+    }
+}
+
+@media only screen and (max-width: 668px) {
+
+    .upper {
+        grid-template-columns: 50px 50px;
+    }
+
+    .navlist {
+        display: grid;
+        grid-template-columns: 100%;
+        background-color: rgba(0, 0, 0, 0.856);
+        width: 40vw;
+        height: 80vh;
+        text-align: left;
+        position: fixed;
+        top: 75px;
+        left: 50px;
+        padding: 50px 0 10px 50px;
+        border-radius: 25px;
+    }
+
+    .navlist li {
+        align-self: baseline;
+        padding: 25px 0;
+    }
+
+    .navlist a {
+        color: white;
+        padding: 0 0 10px 0;
+        border-bottom: 3px inset white;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .show{
+        display: block;
+    }
+
+    .humburger {
+        display: inline-block;
+        grid-row: 1 / 2;
+        font-size: 37px;
+        cursor: pointer;
+    }
+
+    .cancel {
+        position: fixed;
+        color: #724FD8;
+        top: 70px;
+        left: 35%;
+        padding: 15px 25px;
+        z-index: 10000;
+        cursor: pointer;
+    }
+
+    .cancel:hover {
+        font-size: 2rem;
+        transform: translatex(-10px);
+    }
+
+    .logotext {
+        font-size: 39px;
+    }
+
+    .categories {
+        margin: 50px 0 60px 0;
+        font-size: 30px;
+    }
+
+    #posts {
+        grid-template-columns: 49% 49%;
+        grid-gap: 2%;
+    }
+
+    .blogimg {
+        border-radius: 0 45px;
+    }
+
+    .explore {
+        grid-template-columns: 100%;
+    }
+
+    .footer {
+        grid-template-columns: 33% 33% 33%;
+        padding: 50px 25px 20px 25px;
+        margin: 0 0 50px 0;
+    }
+
+    .myself {
+        grid-row: 1 / 3;
+    }
+
+
+
+
+    
+
+    #footer {
+        margin: 0;
+        padding: 15px 15px 10px 15px;
+    }
+
+    .links li {
+        margin: 0;
+    }
+
+    .social {
+        grid-column: 2 / 4;
+        margin: 15px 0 0 0;
+    }
+
+    .links h2,
+    .contact h2,
+    .social h2 {
+        font-size: 1.7rem;
+        margin: 0 0 15px 0;
+    }
+
+    #manage,
+    #copyright {
+        font-size: xx-small;
+    }
+}
+
+@media only screen and (max-width:490px) {
+
+    .header {
+        padding: 45px 45px 0 45px;
+    }
+
+    .navlist {
+        width: 50vw;
+        left: 40px;
+    }
+
+    .cancel {
+        left: 40%;
+    }
+
+    .logotext {
+        font-size: 38px;
+    }
+
+    .humburger {
+        font-size: 36px;
+    }
+
+    main {
+        padding: 0 45px 0 45px;
+    }
+
+    .categories {
+        font-size: 29px;
+    }
+
+    .blogimg {
+        border-radius: 0 25px;
+    }
+
+    .footer {
+        grid-template-columns: 46% 27% 27%;
+    }
+
+    .social {
+        margin: 20px 0 0 0;
+    }
+
+    .links h2,
+    .contact h2,
+    .social h2 {
+        font-size: 1.6rem;
+        margin: 0 0 10px 0;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+
+    .header {
+        padding: 40px 40px 0 40px;
+    }
+
+    .navlist {
+        width: 60vw;
+        left: 35px;
+        padding: 50px 0 10px 40px;
+    }
+
+    .cancel {
+        left: 45%;
+    }
+
+    .logotext {
+        font-size: 37px;
+    }
+
+    .humburger {
+        font-size: 35px;
+    }
+
+    main {
+        padding: 0 40px 0 40px;
+    }
+
+    .categories {
+        font-size: 28px;
+    }
+
+    .blogimg {
+        border-radius: 0 50px;
+    }
+
+    #posts {
+        grid-template-columns: 100%;
+        overflow: hidden;
+    }
+
+    #readmore {
+        margin: 50px auto 80px auto;
+        width: 90%;
+    }
+
+    .blogimg {
+        border-radius: 0 47px;
+    }
+
+    .footer {
+        grid-template-columns: 100%;
+    }
+
+    #footer {
+        padding: 15px 0px 10px 0px;
+    }
+
+    .myself {
+        grid-row: 1 / 2;
+        margin: 0 0 35px 0;
+    }
+
+    .contact {
+        margin: 25px 0 0 0;
+    }
+
+    .social {
+        grid-column: 1 / 2;
+        margin: 25px 0 0 0;
+    }
+
+    .links,
+    .contact,
+    .social {
+        text-align: left;
+    }
+
+    .links h2,
+    .contact h2,
+    .social h2 {
+        font-size: 1.5rem;
+        margin: 0 0 7px 0;
+    }
+}
+
+@media only screen and (max-width: 335px) {
+
+    .logotext {
+        font-size: 36px;
+    }
+
+    .humburger {
+        font-size: 34px;
+    }
+
+    .categories {
+        font-size: 27px;
+    }
+
+    .blogimg {
+        border-radius: 0 37px;
+    }
+
+    .navlist {
+        width: 70vw;
+        left: 30px;
+        padding: 50px 0 10px 40px;
+    }
+
+    .cancel {
+        left: 50%;
+    }
+}
+
+@media only screen and (max-width: 235px) {
+
+    .header {
+        padding: 35px 35px 0 35px;
+    }
+
+    .navlist {
+        width: 80vw;
+        left: 25px;
+        padding: 50px 0 10px 40px;
+    }
+
+    .cancel {
+        left: 55%;
+    }
+
+    .upper {
+        grid-template-columns: 40px 40px;
+    }
+
+    .logotext {
+        font-size: 35px;
+    }
+
+    .humburger {
+        font-size: 33px;
+    }
+
+
+    main {
+        padding: 0 35px 0 35px;
+    }
+
+    .categories {
+        font-size: 26px;
+    }
+
+    .blogimg {
+        border-radius: 0 25px;
+    }
+}
+
+@media only screen and (max-width: 200px) {
+
+    .header {
+        padding: 30px 30px 0 30px;
+    }
+
+    .upper {
+        grid-template-columns: 35px 35px;
+    }
+
+    .logotext {
+        font-size: 34px;
+    }
+
+    .humburger {
+        font-size: 32px;
+    }
+
+
+    main {
+        padding: 0 30px 0 30px;
+    }
+
+    .categories {
+        font-size: 25px;
+    }
+
+    .blogimg {
+        border-radius: 0 20px;
+    }
+
+    .myself h1 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 163px) {
+
+    body {
+        display: none;
+    }
+
+    .header {
+        padding: 20px 20px 0 20px;
+    }
+
+    main {
+        padding: 0 20px 0 20px;
+    }
+
+    .humburger {
+        display: none;
+    }
+
+    .blogimg {
+        border-radius: 0 15px;
+    }
+}
+
